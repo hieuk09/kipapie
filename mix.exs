@@ -30,7 +30,8 @@ defmodule Kipapie.Mixfile do
   defp deps do
     [
       {:exvcr, "~> 0.7", only: :test},
-      {:httpotion, "~> 3.0.0"}
+      {:httpotion, "~> 3.0.0"},
+      {:exjsx, "~> 3.2.0"}
     ]
   end
 end

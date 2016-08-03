@@ -10,30 +10,22 @@ defmodule KipapieTest do
 
   test "kipapie get --item=post --type=hot --api=API" do
     use_cassette "get hot post" do
-      item = 'post'
-      type = 'hot'
-      api = 'api_token'
-      action = 'get'
       Kipapie.main([
-        action,
-        "--item=#{item}",
-        "--type=#{type}",
-        "--api=#{api}"
+        "get",
+        "--item=post",
+        "--type=hot",
+        "--api=api_token"
       ])
     end
   end
 
   test "kipapie get --item=post --type=newest --api=API" do
     use_cassette "get newest post" do
-      item = 'post'
-      type = 'newest'
-      api = 'api_token'
-      action = 'get'
       Kipapie.main([
-        action,
-        "--item=#{item}",
-        "--type=#{type}",
-        "--api=#{api}"
+        "get",
+        "--item=post",
+        "--type=newest",
+        "--api=api_token"
       ])
     end
   end
