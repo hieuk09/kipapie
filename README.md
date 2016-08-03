@@ -1,24 +1,19 @@
 # Kipapie
 
-**TODO: Add description**
+Kipapie (read similar to Kip-a-pie) is an elixir wrapper for Kipalog.com API
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+Clone this repo :troll:
 
-  1. Add `kipapie` to your list of dependencies in `mix.exs`:
+TODO: I will figure out how to publish elixir library later
 
-    ```elixir
-    def deps do
-      [{:kipapie, "~> 0.1.0"}]
-    end
-    ```
+## CLI
 
-  2. Ensure `kipapie` is started before your application:
+Currently, this only support `GET` request of Kipalog API. `POST` request will
+be added later.
 
-    ```elixir
-    def application do
-      [applications: [:kipapie]]
-    end
-    ```
-
+```shell
+cd kipapie
+./kipapie get --item=post --type=hot --api=API
+```
